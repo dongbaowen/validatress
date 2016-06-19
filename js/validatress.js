@@ -18,11 +18,9 @@
 			return this.on(type, function(event){
 				var $target = $(event.target);
 
-				/*if($target.is(delegate)){
+				if($target.is(delegate)){
 					return handler.apply($target, arguments);
-				}*/
-
-				return handler.apply($target, arguments);
+				}
 			});
 		}
 	});
@@ -66,7 +64,7 @@ $.extend($.validator, {
 
 			//绑定事件
 			$( this.currentForm )
-				.validateDelegate("[type='text']", "change", delegate)
+				.validateDelegate("[type='text'], [type='email']", "change", delegate)
 				.validateDelegate("select, option, [type='radio'], [type='checkbox']", "click", delegate);
 
 		}

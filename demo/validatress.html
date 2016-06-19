@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>Validatress Demo</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/validatress.css">
+	<style type="text/css">
+		.main-container{
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container main-container">
+		<form id="form" class="form-horizontal validate-form">
+
+		  	<div class="form-group">
+		    	<label for="name" class="col-sm-2 control-label">Name</label>
+		    	<div class="col-sm-7">
+		      		<input type="text" class="form-control" id="name" placeholder="name">
+		    	</div>
+		  	</div>
+
+		  	<div class="form-group">
+		    	<label for="email" class="col-sm-2 control-label">Email</label>
+		    	<div class="col-sm-7">
+		      		<input type="email" class="form-control" id="email" placeholder="email">
+		    	</div>
+		  	</div>
+
+		  	<div class="form-group">
+		    	<label for="inputPassword3" class="col-sm-2 control-label">Phone</label>
+		    	<div class="col-sm-7">
+		      		<input type="phone" class="form-control" id="phone" placeholder="phone">
+		    	</div>
+		  	</div>
+
+		  	<div class="form-group">
+		    	<label for="inputPassword3" class="col-sm-2 control-label">Phone</label>
+		    	<div class="col-sm-7">
+		    		<input type="radio" name="gender"/>
+		    		<input type="radio" name="gender"/>
+		    	</div>
+		  	</div>
+
+		  	<div class="form-group">
+		    	<div class="col-sm-offset-2 col-sm-7">
+		      		<div class="checkbox">
+		       	 		<label>
+		          			<input type="checkbox"> Remember me
+		        		</label>
+		      		</div>
+		    	</div>
+		  	</div>
+
+		  	<div class="form-group">
+		    	<div class="col-sm-offset-2 col-sm-7">
+		      		<button type="submit" class="btn btn-default">Sign in</button>
+		    	</div>
+		  	</div>
+
+		</form>
+	</div>
+	
+<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/validatress.js"></script>
+<script type="text/javascript">
+	$('#form').validate();
+
+</script>
+</body>
+</html>
