@@ -1,0 +1,100 @@
+*{
+	font-family: Microsoft YaHei;
+}
+.wrap-validate-container{
+	position: relative;
+}
+.validate-box.right {
+    margin-left: 10px;
+}
+.validate-box {
+    position: absolute;
+    top: -3px;
+    z-index: 1060;
+    display: none;
+    max-width: 276px;
+    min-width: 200px;
+    padding: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: normal;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgb(255, 144, 88);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2); 
+    line-break: auto;
+}
+.validate-box.right>.arrow {
+    top: 50%;
+    left: -11px;
+    margin-top: -11px;
+    border-right-color: rgb(255, 144, 88);;
+    border-left-width: 0;
+}
+.validate-box>.arrow {
+    border-width: 11px;
+}
+.validate-box>.arrow, .validate-box>.arrow:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+.validate-box>.arrow:after {
+    content: "";
+    border-width: 10px;
+}
+.validate-box.right>.arrow:after {
+    bottom: -10px;
+    left: 1px;
+    content: " ";
+    border-right-color: #fff;
+    border-left-width: 0;
+}
+.validate-box>.arrow, .validate-box>.arrow:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.validate-box-title {
+    padding: 8px 14px;
+    margin: 0;
+    font-size: 14px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px 5px 0 0;
+}
+.validate-box-content {
+    padding: 7px 14px;
+    color: rgb(255, 144, 88);
+}
+.errorInput{
+	border-color: rgb(255, 144, 88);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(255, 144, 88);
+}
